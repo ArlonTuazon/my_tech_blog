@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize');
-const db = require ('../config/connection');
+const { Model, DataTypes } = require('sequelize');
+const sequelize= require ('../config/connection');
 
 const bcrypt = require('bcrypt');
 
@@ -28,14 +28,7 @@ User.init(
           type: DataTypes.STRING,
           allowNull: false
         },
-        twitter: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        github: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
+        
         // define an email column
         email: {
           type: DataTypes.STRING,
