@@ -30,11 +30,16 @@
               
             <ul id="nav-mobile" class= 
                 "right hide-on-med-and-down"> 
-                <li><a href= "">Homepage</a></li> 
+                {{#if loggedIn}}
+                <li><a href= "/">Homepage</a></li> 
                 <li><a href= "">Dashboard</a></li> 
                 <li><a href= "">Sign In</a></li> 
             </ul> 
         </div> 
+        {{else}}
+            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
+            {{!-- <a href="/login" class="button is-primary">login</a> --}}
+            {{/if}}
     </nav> 
   </header>
   <main>
