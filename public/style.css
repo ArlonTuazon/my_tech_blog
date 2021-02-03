@@ -1,0 +1,14 @@
+header.home {
+    margin-top: 25px;
+    margin-right:50px;
+    margin-left: 50px;
+    background-color: lightpink;
+
+}
+.tabs .indicator{
+    background-color: #da92c2;
+}
+body.login{
+    align-items: center;
+    
+}
