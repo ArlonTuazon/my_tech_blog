@@ -1,8 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize= require ('../config/connection');
-
+const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
-
 
 // create our User model
 class User extends Model {
@@ -11,7 +9,6 @@ class User extends Model {
         return bcrypt.compareSync(loginPw, this.password);
     }
 }
-
 
 // define table columns and configuration
 User.init(
@@ -47,7 +44,6 @@ User.init(
           }
         }
       },
-    
   {
       hooks: {
         // set up beforeCreate lifecycle "hook" functionality
@@ -69,7 +65,5 @@ User.init(
     modelName: 'user'
   }
 );
-
-
 
 module.exports = User;

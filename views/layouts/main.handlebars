@@ -19,37 +19,42 @@
         optimized for mobile -->
     <meta name="viewport" content= 
         "width=device-width, initial-scale=1.0" /> 
-        <link rel="stylesheet" href= "style.css">
+        <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Let's talk Technology</title>
 </head> 
   
-<header class ="home"> 
+<header>
     <nav class="navbar"> 
         <div class="nav-wrapper pink darken-1"> 
             <a href="#" class="brand-logo">My Tech blog</a> 
               
             <ul id="nav-mobile" class= 
                 "right hide-on-med-and-down"> 
-                {{#if loggedIn}}
-                <li><a href= "/">Homepage</a></li> 
-                <li><a href= "">Dashboard</a></li> 
-
-                <li><a href= "">Sign Out</a></li> 
+                  {{#if loggedIn}}
+                <li><a href= "/">Homepage</a></li>
+                <li><a href= "/dashboard">Dashboard</a></li> 
+                <li><a href="/dashboard/create/">create new post</a></li>
+                {{else}}
+                <li><a href= "/">Homepage</a></li>
+                <li><a href= "/login">Sign In</a></li> 
+                {{/if}}
             </ul> 
         </div> 
-        {{else}}
-            <a href="/" class="navbar-item is-hoverable pt-1">homepage</a>
-            {{!-- <a href="/login" class="button is-primary">login</a> --}}
-            {{/if}}
     </nav> 
-  </header>
-  <main>
-      {{{body}}}
-  </main>
+</header>
+
+<main>
+    {{{ body }}}
+</main>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
     <!-- Compiled and minified JavaScript -->
     <script src= 
 "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"> 
     </script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 </body> 
   
 </html> 
