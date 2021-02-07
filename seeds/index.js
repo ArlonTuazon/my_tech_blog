@@ -1,14 +1,14 @@
-const seedPosts = require('./post-seeds');
+// const seedPosts = require('./post-seeds');
 
-const sequelize = require('../config/connection');
+// const sequelize = require('../config/connection');
 
-const seedAll = async () => {
-  await sequelize.sync({ force: true });
-  console.log('\n----- DATABASE SYNCED -----\n');
-  await seedPosts();
-  console.log('\n----- POSTS SEEDED -----\n');
+// const seedAll = async () => {
+//   await sequelize.sync({ force: true });
+//   console.log('\n----- DATABASE SYNCED -----\n');
+//   await seedPosts();
+//   console.log('\n----- POSTS SEEDED -----\n');
 
-  process.exit(0);
-};
+//   process.exit(0);
+// };
 
-seedAll();
+// seedAll();
