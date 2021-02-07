@@ -29,11 +29,11 @@
 `npm test`
 
 ### Github URL 
-`https://github.com/ArlonTuazon/just-tech-news`
+#### https://github.com/ArlonTuazon/just-tech-news
 
 ### Heroku URL
-`https://arlon-tech-blog.herokuapp.com/`
+#### https://arlon-tech-blog.herokuapp.com/
 
 ### Using Browser
-`hhtps://localhost:8080`
+#### hhtps://localhost:8080
 
