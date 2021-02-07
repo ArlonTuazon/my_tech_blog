@@ -35,5 +35,5 @@
 #### https://arlon-tech-blog.herokuapp.com/
 
 ### Using Browser
-#### hhtps://localhost:8080
+#### https://localhost:8080
 
