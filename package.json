@@ -1,12 +1,13 @@
 {
   "name": "my_tech_blog",
   "version": "1.0.0",
-  "description": "All Technology Blog",
+  "description": "all technology Blog",
   "main": "server.js",
   "scripts": {
     "test": "jest",
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
